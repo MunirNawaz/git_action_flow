@@ -1,8 +1,7 @@
 import json
-def lamda_handler(event, context):
-    return{
-        "statuscode" : 200,
-        "body" : json.dumps("Hellow from CICD Lambda from vscode2")
+
+def lambda_handler(event, context):
+    return {
+        "statusCode": 200,
+        "body": json.dumps("Hello Lambda from VSCode-1!")
     }
-    
-    
